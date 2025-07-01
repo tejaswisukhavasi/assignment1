@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sadineni Amrutha - Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #e0f2f1;
+      color: #333;
+      padding: 30px;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      display: flex;
+      flex-wrap: wrap;
+      background: #fff;
+      border-radius: 15px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+    }
+
+    .sidebar {
+      background: #00695c;
+      color: white;
+      padding: 40px 20px;
+      flex: 1 1 300px;
+      text-align: center;
+    }
+
+    .profile-image {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      background: #4db6ac;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 48px;
+      margin: 0 auto 20px;
+      border: 4px solid white;
+    }
+
+    .name {
+      font-size: 22px;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .title {
+      font-size: 15px;
+      color: #b2dfdb;
+      margin-bottom: 25px;
+    }
+
+    .contact-item {
+      background: rgba(255, 255, 255, 0.1);
+      margin: 10px auto;
+      padding: 10px;
+      border-radius: 6px;
+      text-align: left;
+      font-size: 14px;
+    }
+
+    .contact-label {
+      font-weight: bold;
+      color: #80deea;
+    }
+
+    a {
+      color: #80deea;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .content {
+      flex: 2 1 600px;
+      padding: 30px;
+    }
+
+    .section {
+      margin-bottom: 30px;
+    }
+
+    .section-title {
+      font-size: 20px;
+      color: #004d40;
+      margin-bottom: 15px;
+      border-left: 4px solid #26a69a;
+      padding-left: 10px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th, td {
+      border: 1px solid #ccc;
+      padding: 10px;
+      font-size: 14px;
+    }
+
+    th {
+      background: #26a69a;
+      color: white;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+
+    .skills-lists {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+
+    .skills-box {
+      flex: 1 1 200px;
+    }
+
+    .skills-box h3 {
+      margin-bottom: 10px;
+      color: #00897b;
+    }
+
+    .skills-list {
+      list-style: none;
+    }
+
+    .skills-list li {
+      background: #e0f2f1;
+      border-left: 5px solid #26a69a;
+      padding: 8px;
+      margin-bottom: 8px;
+      border-radius: 4px;
+    }
+
+    .skills-list.negative li {
+      border-left-color: #e57373;
+    }
+
+    .achievements-box {
+      background: #f1f8e9;
+      border-left: 5px solid #8bc34a;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .achievement-item {
+      margin-bottom: 10px;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="sidebar">
+      <div class="profile-image">👩‍💻</div>
+      <div class="name">Sukhavasi Tejaswi</div>
+      <div class="title">Web Developer</div>
+      <div class="contact-item">
+        <span class="contact-label">📍 Location:</span><br>Andhra Pradesh, India
+      </div>
+      <div class="contact-item">
+        <span class="contact-label">📞 Phone:</span><br>+91 7013465772
+      </div>
+      <div class="contact-item">
+        <span class="contact-label">📧 Email:</span><br>sukhavasitejaswi735@gmail.com
+      </div>
+    </div>
+
+    <div class="content">
+      <section class="section">
+        <h2 class="section-title">Educational Details</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Degree</th>
+              <th>Institution</th>
+              <th>Year</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>B.Tech - CSE</td>
+              <td>Vignan University</td>
+              <td>2023 - 2027</td>
+            </tr>
+            <tr>
+              <td>Intermediate</td>
+              <td>Viveka Junior College</td>
+              <td>2021 - 2023</td>
+            </tr>
+            <tr>
+              <td>SSC</td>
+              <td>Sri Chaitanya High School</td>
+              <td>2019</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title">My Strengths & Areas for Growth</h2>
+        <div class="skills-lists">
+          <div class="skills-box">
+            <h3>My Positives</h3>
+            <ul class="skills-list">
+              <li>Hardworking</li>
+              <li>Quick Learner</li>
+              <li>Team Player</li>
+              <li>Creative Thinking</li>
+            </ul>
+          </div>
+          <div class="skills-box">
+            <h3 style="color:#d32f2f;">My Negatives</h3>
+            <ul class="skills-list negative">
+              <li>Overthinking</li>
+              <li>Perfectionist at times</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title">Achievements</h2>
+        <div class="achievements-box">
+          <div class="achievement-item">🚀 Built a fully working eNews Website</div>
+          <div class="achievement-item">📜 Guided school children in Computational Thinking </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+</body>
+</html>
